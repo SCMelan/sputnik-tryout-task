@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sputnik-tryout-task/static/css/main.2c7efa65.css",
+    "main.js": "/sputnik-tryout-task/static/js/main.6073e0d6.js",
+    "index.html": "/sputnik-tryout-task/index.html",
+    "main.2c7efa65.css.map": "/sputnik-tryout-task/static/css/main.2c7efa65.css.map",
+    "main.6073e0d6.js.map": "/sputnik-tryout-task/static/js/main.6073e0d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c7efa65.css",
+    "static/js/main.6073e0d6.js"
+  ]
+}
