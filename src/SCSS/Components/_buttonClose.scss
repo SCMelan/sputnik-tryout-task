@@ -1,0 +1,52 @@
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+    position: relative;
+    width: $size;
+    height: $size;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: calc(($size - $thickness) / 2);
+        left: 0;
+        right: 0;
+        height: $thickness;
+        background: $color;
+        border-radius: $thickness;
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
+
+.auth_button {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #f66c6c 0%, #c00b0b 85%);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-left: 15px;
+
+    &-cross {
+        @include cross(30px, #fff, 3px);
+    }
+
+    &:hover,
+    &:focus {
+        transform: rotateZ(90deg);
+        background: linear-gradient(90deg, #c00b0b 0%, #f66c6c 85%);
+    }
+
+}

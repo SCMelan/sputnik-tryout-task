@@ -1,0 +1,21 @@
+.button-handler {
+    user-select: none;
+    margin: 40px 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 55px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.2s;
+    background-size: 300% 100%;
+    
+
+    &:hover {
+        scale: 1.05;
+        background-position: 100% 0;
+        transition: all .4s ease-in-out;
+    }
+}
